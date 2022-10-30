@@ -4,7 +4,8 @@ builder.Logging.AddConsole();
 
 builder.Logging.AddEventLog(eventLogSettings =>
 {
-    eventLogSettings.SourceName = "MyLogs";
+    eventLogSettings.LogName = "LogTest";
+    eventLogSettings.SourceName = "Test1";
 });
 
 
